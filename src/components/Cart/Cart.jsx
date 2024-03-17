@@ -9,7 +9,10 @@ const Cart = ({carts, handleDelete}) => {
           {carts.map((item, idx) => (
             <li key={idx}>
               {item.title.slice(0, 20)} {item.price}
-              <button onClick={() => handleDelete(item)} className="btn btn-sm">
+              <button
+                onClick={() => handleDelete(item.id)}
+                className="btn btn-sm"
+              >
                 Delete
               </button>
             </li>

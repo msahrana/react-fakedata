@@ -21,8 +21,8 @@ function App() {
     setCarts([...carts, card]);
   };
 
-  const handleDelete = (card) => {
-    const newArray = carts.filter((item) => item.id !== card.id);
+  const handleDelete = (id) => {
+    const newArray = carts.filter((item) => item.id !== id);
     setCarts(newArray);
   };
 
